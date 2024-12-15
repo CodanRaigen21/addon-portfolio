@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" type="text/javascript" defer></script>
+		<title>Add-on Portfolio</title>
+	</head>
+	<body>
+		<div class="section-wrapper">
+			<section>
+				<div id="introduction" class="half">
+					<div class="headers">
+						<div class="left">
+							<h1>I'm CodanRaigen21</h1>
+							<h2 style="color:gray">An add-on developer (2017 - Present)</h2>
+							<p>I develop add-ons that implement interesting concepts. Beating the Wither by <a href="#view-food-fight">throwing cake at its face</a>? Accidentally <a href="#view-mega-crops">growing a giant poisonous potato</a>? Or even <a href="#view-spawncrafter">crafting a spawn egg</a> in survival? Try out my existing work! I also experiment with the script API to develop complex mechanics. Recently, I just created vehicles that you can build and drive!<br><br>Scroll right to view projects &gt;</p>
+						</div>
+						<img class="codan-boxes" src="images/codan_boxes.png">
+					</div>
+					<nav>
+						<a class="intro-link" style="background-image:url('images/architect/thumb.png');" data-page="view-architect"><span>View Architect</span></a>
+						<a class="intro-link" style="background-image:url('images/boomerangs/thumb.png');" data-page="view-boomerangs"><span>View Boomerangs</span></a>
+						<a class="intro-link" style="background-image:url('images/cargo-blocks/thumb.png');" data-page="view-cargo-blocks"><span>View Cargo Blocks</span></a>
+						<a class="intro-link" style="background-image:url('images/food-fight/thumb.png');" data-page="view-food-fight"><span>View Food Fight</span></a>
+						<a class="intro-link" style="background-image:url('images/just-statues/thumb.png');" data-page="view-just-statues"><span>View Just Statues</span></a>
+						<a class="intro-link" style="background-image:url('images/mega-crops/thumb.png');" data-page="view-mega-crops"><span>View Mega Crops</span></a>
+						<a class="intro-link" style="background-image:url('images/spawncrafter/thumb.png');" data-page="view-spawncrafter"><span>View Spawncrafter</span></a>
+					</nav>
+					<a onclick="goto_experiments(this)" class="nav-link experiments-link">View Experiments</a>
+				</div>
+				<div id="view-experiments" class="half">
+					<a onclick="goto_introduction(this)" class="nav-link intro-link">View Introduction</a>
+					<div class="exp">
+						<h1>Buildable Vehicles</h1>
+						<iframe src="https://www.youtube.com/embed/sc6mLF9zLLU"></iframe>
+						<p>With this experiment, I developed a way to detect blocks and if all conditions are met, I can create spawn a mob and drive it. The way you control the mob is different from a horse. You need to hold down a "pedal" to actually drive and looking upwards or downwards can trigger a smoother turn, allowing you to drift.</p>
+					</div>
+					<div class="exp">
+						<h1>Chain Entity</h1>
+						<iframe src="https://www.youtube.com/embed/9h68lvZViis"></iframe>
+						<p>I worked on this for a long time to recreate a mechanic without looking at other existing examples. I made it work and made a lot of improvements compared to existing work. I prevented them from merging with other chains and created a simple script to generate them upon spawning.</p>
+					</div>
+				</div>
+			</section>
+			<section data-content id="view-architect">
+				<div class="content">
+					<blockquote class="twitter-tweet" data-media-max-width="560">
+						<a href="https://twitter.com/real_cr21/status/1832189073466720460?ref_src=twsrc%5Etfw"></a>
+					</blockquote>
+					<p>It lets you use the /fill command in survival, saving you lots of time. It'll consume your resources to place blocks.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-boomerangs">
+				<div class="content">
+					<blockquote class="twitter-tweet" data-media-max-width="560">
+						<a href="https://twitter.com/real_cr21/status/1830545079078994052?ref_src=twsrc%5Etfw"></a>
+					</blockquote>
+					<p>It adds a variety of boomerangs to the game. ALmost all of them have special mechanics and specific use cases.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-cargo-blocks">
+				<div class="content">
+					<blockquote class="twitter-tweet" data-media-max-width="560">
+						<a href="https://twitter.com/real_cr21/status/1825559161838649696?ref_src=twsrc%5Etfw"></a>
+					</blockquote>
+					<p>It adds decorative blocks with connecting textures. Every connection is accounted for, more than 300!</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-food-fight">
+				<div class="content">
+					<iframe src="https://www.youtube.com/embed/oYtFmRdtX1E"></iframe>
+					<p>You can use food as projectiles. The damage is based on the hunger points they restore. Sneak and interact to throw.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-just-statues">
+				<div class="content">
+					<iframe src="https://www.youtube.com/embed/4riJNZN56Y0"></iframe>
+					<p>It adds decorative statues you can order on a phone. Using a chisel, you can build them place them anywhere you want.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-mega-crops">
+				<div class="content">
+					<iframe src="https://www.youtube.com/embed/4KxbySWvHbQ"></iframe>
+					<p>It lets you grow crops way beyond their original size. Just keep giving fully matured crops bone meal.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+			<section data-content id="view-spawncrafter">
+				<div class="content">
+					<blockquote class="twitter-tweet" data-media-max-width="560">
+						<a href="https://twitter.com/real_cr21/status/1826680987490943333?ref_src=twsrc%5Etfw"></a>
+					</blockquote>
+					<p>You're able to craft spawn eggs, mob spawners, and trial spawners in survival. You must harvset a mob's orb first.</p>
+					<a data-download href="#" target="_blank">Download on Mediafire</a>
+				</div>
+			</section>
+		</div>
+	</body>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+	</script>
+</html>
